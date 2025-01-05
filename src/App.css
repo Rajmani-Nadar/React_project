@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar, .hero, .job-listings, .footer {
+    padding: 20px;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+  }
+  
+  .jobs-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33% - 20px);
+  }
+  
+  @media (max-width: 768px) {
+    .jobs-grid {
+      flex-direction: column;
+    }
+  
+    .job-card {
+      width: 100%;
+    }
+  }
+  
